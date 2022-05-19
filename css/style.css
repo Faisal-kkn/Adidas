@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+:root {
+    --c-black: #000;
+    --c-white: #fff;
+    --c-hov-text: #767677W;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Font Sizes */
+.fs-11 {
+    font-size: 11px;
+}
+
+.fs-13 {
+    font-size: 14px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-42 {
+    font-size: 42px;
+}
+
+/*  */
+
+.height-100vh {
+    height: 100vh;
+}
+
+.height-80vh {
+    height: 80vh;
+}
+
+.height-150px{
+    height: 150px;
+}
+
+.z-1 {
+    z-index: -1;
+}
+
+.my-btn {
+    min-height: 50px;
+    background: var(--c-black);
+    color: var(--c-white);
+    transition: .3s;
+    border: 0;
+    font-weight: bold;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+.my-btn::before {
+    content: '';
+    width: 5px;
+    height: 100%;
+    /* background: red; */
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    border-top: 2px solid var(--c-white);
+    border-right: 2px solid var(--c-white);
+    border-bottom: 2px solid var(--c-white);
+}
+
+.my-btn::after {
+    content: '';
+    width: 95%;
+    height: 5px;
+    /* background: yellow; */
+    position: absolute;
+    bottom: -5px;
+    right: 0px;
+    border-bottom: 2px solid var(--c-white);
+    border-left: 2px solid var(--c-white);
+}
+
+
+.my-btn2::before {
+    border-color: #000;
+}
+
+.my-btn2::after {
+    border-color: #000;
+}
+
+.my-btn:hover {
+    background: var(--c-white);
+    color: var(--c-hov-text);
+}
+
+.btn-border{
+    align-items: center;
+    background-color: var(--c-white);
+    border: 1px solid #d3d7da;
+    color: var(--c-hov-text);
+    cursor: pointer;
+}
+
+.btn-border:hover{
+    border-color: var(--c-black);
+}
+
+.main-heading{
+    font-size: 35px;
+    margin: 0 0 15px 0;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.main-sub-heading{
+    font-size: 35px;
+    margin: 0 0 40px 0;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.main-sub-heading2{
+    margin: 0 0 -40px 0;
+}
+
+.bot-70{
+    bottom: 70px;
+    transition: .3s;
+}
+
+.bot-55{
+    bottom: 55px;
+    transition: .3s;
+}
+
+.owl-carousel .item:hover .bot-55{
+    bottom: 65px!important;
+}
+
+.owl-carousel .item:hover .bot-70{
+    bottom: 80px;
+}
+
+.owl-carousel .item:hover{
+    transition: .3s;
+    border: 1px solid var(--c-black);
+}
+
+.item .product-img{
+    height: 390px;
+    overflow: hidden;
+}
+
+.mat-80{
+    margin-top: 80px;
+}
+
+.mat-60{
+    margin-top: 60px;
+}
+
+/* NavBar */
+.top-nav p a:hover {
+    text-decoration: underline !important;
+}
+
+.header-top-desktop ul li a {
+    font-size: 13px;
+    color: var(--c-black);
+}
+
+.header-right-menu input {
+    transition: border ease 1s;
+    border: solid thin #e9ecef;
+    padding-left: 10px;
+    padding-right: 35px;
+    background-color: #e9ecef;
+    text-overflow: ellipsis;
+}
+
+.header-right-menu i {
+    padding: 6px;
+    padding-right: 10px;
+}
+
+.header-right-menu span {
+    background: yellow;
+    left: 28px;
+    font-size: 11px;
+    padding: 0px;
+    height: 17px;
+    width: 17px;
+}
+
+/* Banner */
+.banner {
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner_video {
+    width: 100%;
+    height: auto;
+}
+
+/* About */
+.about {
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.about_video {
+    width: 100%;
+}
+
+video {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
+.shopping{
+    height: 350px;
+    width: 100%;
+}
+
+.shopping1{
+    background-image: url(https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enIN/Images/evergreen-homepage-gender-navigation-men-dt_tcm209-761437.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.shopping2{
+    background-image: url(https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enIN/Images/womens_1_tcm209-792193.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.shopping3{
+    background-image: url(https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enIN/Images/kids_1_tcm209-792188.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.owl-nav{
+    position: absolute!important;
+    top: -100px!important;
+    right: 0!important;
+    font-size: 40px;
+    margin-top: 0!important;
+}
+
+.owl-nav button:hover{
+    background-color: var(--c-black)!important;
+}
+
+.owl-nav button span{
+    padding: 10px!important;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    width: 10px;
+    height: 2px!important;
+    border-radius: 0!important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: #000;
+    height: 5px!important;
+}
+
+.loop2 .owl-nav{
+    display: none;
+}
+
+.hot{
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+/* story */
+.story{
+    background-color: #e9ecef;
+}
+
+.join{
+    background-color: #ede734;
+}
+
+/* Footer */
+.footer-menu ul li{
+    font-size: 13px;
+    padding: 3px 0;
+    cursor: pointer;
+}
+
+.footer-menu ul li a{
+    color: var(--c-black);
+    text-decoration: none;
+}
+
+.footer-menu ul li:hover a{
+    text-decoration: underline;
+}
+
+/* Media Screens */
+
+@media screen and (max-width: 1280px) {
+    .banner {
+        height: 71vh;
+    }
+
+    .about {
+        height: 71vh;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .mob_vid {
+        display: block !important;
+        height: 100vh;
+        width: auto;
+    }
+
+    .about_video {
+        height: 100vh;
+        width: auto;
+    }
+
+    .mxsp-0 {
+        padding-left: 0 !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-heading {
+        font-size: 30px;
+        margin: 0 0 0px 0;
+    }
+    .main-sub-heading{
+        font-size: 22px;
+    }
+}
